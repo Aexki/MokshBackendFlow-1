@@ -1,6 +1,6 @@
 # MokshBackendFlow-1
 
-Steps to initialise the project :
+Steps to initialise and run the project :
 
 1) Create a virtual environment.
 2) Then install dependency packages from requirements.txt
