@@ -4,8 +4,8 @@ Steps to initialise the project :
 
 1) Create a virtual environment.
 2) Then install dependency packages from requirements.txt
-3) Do the migrations with the command :<br />
+3) Do the migrations using the command :<br />
     python manage.py makemigrations<br />
     python manage.py migrate
-4) Then start the server with the command :<br />
+4) Then start the server using the command :<br />
     python manage.py runserver
