@@ -20,6 +20,6 @@ admin.site.site_url = None
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path("", include("authentication.urls")),  # Auth routes - login / register
+    path("auth/", include("authentication.urls")),  # Auth routes - login / register
     path("", include("web_scrape_process.urls")),  # web-scraper-processes
 ]
