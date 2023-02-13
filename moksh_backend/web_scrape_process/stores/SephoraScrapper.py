@@ -18,7 +18,7 @@ class SephoraScrapper:
 
     def openWindow(self, link):
         options = webdriver.ChromeOptions()
-        options.add_argument("start-maximized")
+        # options.add_argument("start-maximized")
         options.add_argument("--auto-open-devtools-for-tabs")
 
         self.driver = webdriver.Chrome(r"chromedriver.exe", options = options)
@@ -74,7 +74,7 @@ class SephoraScrapper:
         lastPage = self.getLastPage()
         recordList = []
         while pgCount <= lastPage:
-            print('Running on ', pgCount)
+            # print('Running on ', pgCount)
             try:
                 elements = self.driver.find_elements_by_class_name("css-dfftxd")
                 for element in elements:

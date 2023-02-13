@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import GetInfoFromURL
+from .views import GetInfoFromURL, GetReviewFromURLs
 
 urlpatterns = [
     path('webscrapefromurl', GetInfoFromURL.as_view(), name="getInfoFromUrl"),
+    path('processreviews', GetReviewFromURLs.as_view(), name="processreviews"),
 ]
